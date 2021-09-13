@@ -42,7 +42,7 @@
 
                         <div class="mb-3">
                             <label for="order-id" class="form-label">ID <span class="text-danger">*</span></label>
-                            <input type="number" id="order-id" class="form-control">
+                            <input type="text" id="order-id" class="form-control" value="R00001" readonly>
                         </div>
 
                         <div class="mb-3">
@@ -66,7 +66,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="report" class="form-label">Report</label>
-                            <textarea class="form-control" id="report" rows="2"></textarea>
+                            <textarea class="form-control" id="report" rows="6"></textarea>
                         </div>
 
                     </div>
@@ -87,10 +87,10 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="report-day" class="form-label"> Users </label>
+                            <label for="report-day" class="form-label"> Orders </label>
                             <div class="switchery-demo">
                                 <label class="form-check-label" for="all"> All </label>
-                                <input class="ms-2" id="all" type="checkbox" checked data-plugin="switchery" data-color="#ff5d48" data-size="small" />
+                                <input class="ms-2" id="all" type="checkbox" checked data-plugin="switchery" data-color="#64b0f2" data-size="small" />
                             </div>
                         </div>
                         <div class="mb-3">

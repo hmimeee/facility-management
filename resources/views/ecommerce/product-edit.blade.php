@@ -5,6 +5,13 @@
     <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/dropzone/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/quill/quill.min.css')}}" rel="stylesheet" type="text/css" />
+
+
+    <link href="{{asset('assets/libs/spectrum-colorpicker2/spectrum-colorpicker2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/flatpickr/flatpickr.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/clockpicker/clockpicker.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css" />
+
     <!-- third party css end -->
 @endsection
 
@@ -165,34 +172,19 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="subfamily" class="form-label">Subfamily <span class="text-danger">*</span></label>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <select class="form-select" name="subfamily" id="subfamily">
-                                    <option data-display="Select">-- Subfamily --</option>
-                                    <option value="1">Subfamily 01</option>
-                                    <option value="2">Subfamily 02</option>
-                                    <option value="4">Subfamily 03</option>
-                                </select>
+                        <label class="form-label">Responsibility <span class="text-danger">*</span></label>
+
+                        <div class="d-flex justify-content-between col-md-4">
+                            <div class="form-check mb-2 form-check-primary">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="owner">
+                                <label class="form-check-label" for="owner">Owner</label>
                             </div>
-                            <div class="col-md-4">
-                                <button class="btn btn-light"> Add Or Remove</button>
+
+                            <div class="form-check mb-2 form-check-primary">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="shared">
+                                <label class="form-check-label" for="shared">Shared</label>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="subfamily" class="form-label">Responsibility <span class="text-danger">*</span></label>
-                       <div class="d-flex justify-content-between col-md-4">
-                           <div class="form-check">
-                               <input type="checkbox" class="form-check-input" id="owner" name="owner">
-                               <label class="form-check-label" for="owner">&nbsp; Owner</label>
-                           </div>
-                           <div class="form-check">
-                               <input type="checkbox" class="form-check-input" id="shared" name="shared">
-                               <label class="form-check-label" for="shared">&nbsp; Shared</label>
-                           </div>
-                       </div>
                     </div>
 
                     <div class="mb-3">
@@ -287,7 +279,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text fa fa-calendar"></span>
                             </div>
-                            <input type="text" id="product-date" class="form-control" autocomplete="off" placeholder="dd-mm-yyyy">
+                            <input type="text" id="product-date" class="form-control date-picker" placeholder="yyyy-mm-dd">
                         </div>
 
                     </div>
@@ -329,7 +321,7 @@
 
                     <div class="mb-3">
                         <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description" rows="1" placeholder="Enter a Description"></textarea>
+                        <textarea class="form-control" id="description" rows="6" placeholder="Enter a Description"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="characteristics" class="form-label">Characteristics</label>
@@ -391,7 +383,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text fa fa-calendar"></span>
                             </div>
-                            <input type="text" id="install-date" name="install_date" class="form-control" autocomplete="off" placeholder="dd-mm-yyyy">
+                            <input type="text" id="install-date" name="install_date" class="form-control date-picker" autocomplete="off" placeholder="yyyy-mm-dd">
                         </div>
 
                     </div>
@@ -496,4 +488,24 @@
     <script src="{{asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
     <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
     <!-- end demo js-->
+
+    <!-- third party js -->
+    <script src="{{asset('assets/libs/flatpickr/flatpickr.min.js')}}"></script>
+    <script src="{{asset('assets/libs/spectrum-colorpicker2/spectrum-colorpicker2.min.js')}}"></script>
+    <script src="{{asset('assets/libs/clockpicker/clockpicker.min.js')}}"></script>
+    <script src="{{asset('assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+    <!-- third party js ends -->
+
+    <!-- demo app -->
+    <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
+    <!-- end demo js-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
 @endsection

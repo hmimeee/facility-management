@@ -85,9 +85,10 @@
 
                 <div class="card">
                     <div class="card-body">
-
-                        <h5 class="card-title font-16 mb-3">Attachments</h5>
-
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title font-16 mb-3">Attachments</h5>
+                            <span class="fas fa-cloud-upload-alt"></span>
+                        </div>
                         <div class="card mb-1 shadow-none border">
                             <div class="p-2">
                                 <div class="row align-items-center">

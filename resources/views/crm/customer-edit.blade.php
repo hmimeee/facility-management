@@ -2,7 +2,8 @@
 
 @section('css')
     <!-- third party css -->
-    <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css"
+          xmlns="http://www.w3.org/1999/html"/>
     <link href="{{asset('assets/libs/dropzone/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/quill/quill.min.css')}}" rel="stylesheet" type="text/css" />
 
@@ -30,7 +31,7 @@
                             <li class="breadcrumb-item active">Product Edit</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Create / Edit Users</h4>
+                    <h4 class="page-title">Personal Information</h4>
                 </div>
             </div>
         </div>
@@ -56,7 +57,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text fa fa-calendar"></span>
                                 </div>
-                                <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd-mm-yyyy">
+                                <input type="text" class="form-control date-picker" placeholder="yyyy-mm-dd">
                             </div>
                         </div>
 
@@ -76,17 +77,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text fa fa-calendar"></span>
                                 </div>
-                                <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd-mm-yyyy">
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="finish-date" class="form-label">Finish Date </label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text fa fa-calendar"></span>
-                                </div>
-                                <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd-mm-yyyy">
+                                <input type="text" class="form-control date-picker" placeholder="yyyy-mm-dd">
                             </div>
                         </div>
 
@@ -185,16 +176,17 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="user-status" class="form-label">Status </label>
-                            <select class="form-select" name="status" id="user-status">
-                                <option data-display="Select">-- Select Status --</option>
-                                <option value="1">Active</option>
-                                <option value="0">Inactive</option>
+                            <label for="state" class="form-label">State </label>
+                            <select class="form-select" name="status" id="state">
+                                <option data-display="Select">-- Select State --</option>
+                                <option value="1">State 01</option>
+                                <option value="2">State 02</option>
+                                <option value="2">State 03</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="address" class="form-label">Address <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="address" />
+                            <textarea type="text" class="form-control" id="address" rows="6"></textarea>
                         </div>
 
                     </div>
@@ -265,4 +257,13 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
     <!-- end demo js-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
 @endsection

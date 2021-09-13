@@ -48,7 +48,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="text-lg-end">
-                                    <a href="#" class="btn btn-danger waves-effect waves-light mb-2 me-2"><i class="mdi mdi-basket me-1"></i> Add New Order</a>
+                                    <a href="{{route('second', ['orders', 'order-edit'])}}" class="btn btn-danger waves-effect waves-light mb-2 me-2"><i class="mdi mdi-basket me-1"></i> Add New Order</a>
                                     <button type="button" class="btn btn-light waves-effect mb-2">Export</button>
                                 </div>
                             </div><!-- end col-->

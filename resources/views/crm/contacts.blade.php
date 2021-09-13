@@ -37,8 +37,8 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end">
-                                <button type="button" class="btn btn-success waves-effect waves-light mb-2 me-1"><i class="mdi mdi-cog"></i></button>
-                                <button type="button" class="btn btn-danger waves-effect waves-light mb-2" data-bs-toggle="modal" data-bs-target="#custom-modal">Add Contact</button>
+                                <button type="button" class="btn btn-success waves-effect waves-light me-1"><i class="mdi mdi-cog"></i></button>
+                                <a href="{{route('second', ['crm', 'contact-edit'])}}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-plus-circle me-1"></i> Add Contact</a>
                             </div>
                         </div><!-- end col-->
                     </div>

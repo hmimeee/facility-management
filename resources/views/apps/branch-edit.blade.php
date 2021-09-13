@@ -1,18 +1,11 @@
 @extends('layouts.app', ["page_title"=> "User Page Design"])
 
-
 @section('css')
     <!-- third party css -->
     <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/dropzone/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/quill/quill.min.css')}}" rel="stylesheet" type="text/css" />
-
-
-    <link href="{{asset('assets/libs/spectrum-colorpicker2/spectrum-colorpicker2.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/flatpickr/flatpickr.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/clockpicker/clockpicker.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css" />
-
+    <link href="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
 @endsection
 
@@ -31,7 +24,7 @@
                             <li class="breadcrumb-item active">Product Edit</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Add / Edit Contact</h4>
+                    <h4 class="page-title">Information Of Branch</h4>
                 </div>
             </div>
         </div>
@@ -44,27 +37,29 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
-                            <input type="text" id="name" class="form-control"  placeholder="Name">
+                            <input type="text" id="name" name="name" class="form-control"  placeholder="Branch Name">
                         </div>
-
                         <div class="mb-3">
-                            <label for="birth-date" class="form-label">Date Of Birth </label>
-                            <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd/mm/yyyy">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="company" class="form-label">Company <span class="text-danger">*</span></label>
-                            <input type="text" id="company" class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="user-role" class="form-label">User Role <span class="text-danger">*</span></label>
-                            <select class="form-select" name="user-role" id="report-day">
-                                <option data-display="Select">-- Select User Role --</option>
-                                <option value="1">Admin</option>
-                                <option value="2">Cashier</option>
-                                <option value="4">General User</option>
+                            <label for="city" class="form-label">City <span class="text-danger">*</span></label>
+                            <select class="form-select" name="city" id="city">
+                                <option data-display="Select">-- Select City --</option>
+                                <option value="1">City 01</option>
+                                <option value="2">City 02</option>
+                                <option value="4">City 03</option>
                             </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="state" class="form-label">State <span class="text-danger">*</span></label>
+                            <select class="form-select" name="state" id="state">
+                                <option data-display="Select">-- Select State --</option>
+                                <option value="1">State 01</option>
+                                <option value="2">State 02</option>
+                                <option value="4">State 03</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address </label>
+                            <textarea type="text" id="address" name="address" rows="2" class="form-control"></textarea>
                         </div>
                     </div>
                 </div> <!-- end card -->
@@ -75,31 +70,40 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                            <input type="phone" id="email" class="form-control">
+                            <label for="client" class="form-label">Client <span class="text-danger">*</span></label>
+                            <select class="form-select" name="client" id="client">
+                                <option data-display="Select">-- Select Client --</option>
+                                <option value="1">Client 01</option>
+                                <option value="2">Client 02</option>
+                                <option value="4">Client 03</option>
+                            </select>
                         </div>
-                        <div class="mb-3">
-                            <label for="photo" class="form-label">Photo <span class="text-danger">*</span></label>
-                            <div class="mb-3">
-                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
-                                    <div class="fallback">
-                                        <input name="file" type="file" id="photo" multiple />
-                                    </div>
 
-                                    <div class="dz-message needsclick">
-                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                        <h3>Drop files here or click to upload.</h3>
-                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                                <strong>not</strong> actually uploaded.)</span>
-                                    </div>
-                                </form>
-                                <!-- Preview -->
-                                <div class="dropzone-previews mt-3" id="file-previews"></div>
-                            </div>
+                        <div class="mb-3">
+                            <label for="contact" class="form-label">Contact <span class="text-danger">*</span></label>
+                            <select class="form-control select2" id="contact">
+                                <option>Select Contact</option>
+                                <option value="1">Contact 01</option>
+                                <option value="2">Contact 02</option>
+                                <option value="3">Contact 03</option>
+                                <option value="4">Contact 04</option>
+
+                            </select>
                         </div>
                         <div class="mb-3">
-                            <label for="details" class="form-label">Details</label>
-                            <textarea class="form-control" id="details" rows="2"></textarea>
+                            <label for="image" class="form-label">Image </label>
+                            <input type="file" id="image" name="image" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="priority" class="form-label">Priority</label>
+                            <select class="form-select" name="priority" id="priority">
+                                <option data-display="Select">-- Select Priority --</option>
+                                <option value="1">No Priority</option>
+                                <option value="2">Urgent</option>
+                                <option value="4">High</option>
+                                <option value="4">Medium</option>
+                                <option value="4">Low</option>
+                            </select>
                         </div>
                     </div>
                 </div> <!-- end card -->
@@ -157,16 +161,20 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
     <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
-    <!-- end demo js-->
+    <!-- end demo js--->
 
-    <!-- third party js -->
-    <script src="{{asset('assets/libs/flatpickr/flatpickr.min.js')}}"></script>
-    <script src="{{asset('assets/libs/spectrum-colorpicker2/spectrum-colorpicker2.min.js')}}"></script>
-    <script src="{{asset('assets/libs/clockpicker/clockpicker.min.js')}}"></script>
-    <script src="{{asset('assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+
+    <!-- demo app -->
+    <script src="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.js')}}"></script>
+    <script src="{{asset('assets/libs/selectize/selectize.min.js')}}"></script>
+    <script src="{{asset('assets/libs/select2/select2.min.js')}}"></script>
+
+
+    <script src="{{asset('assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
     <!-- third party js ends -->
 
     <!-- demo app -->
-    <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
+    <script src="{{asset('assets/js/pages/form-advanced.init.js')}}"></script>
     <!-- end demo js-->
+
 @endsection

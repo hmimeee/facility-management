@@ -93,14 +93,14 @@
                         </div>
                     </div>
                         <div class="mb-3 col-lg-6">
-                        <div class="switchery-demo">
-                            <label class="form-label px-2">Create User</label>
-                            <input type="checkbox" checked data-switchery="true" data-plugin="switchery" data-color="#039cfd" />
+                            <div class="switchery-demo">
+                                <label for="create-user" class="form-label"> Create User </label>
+                                <input class="ms-2" id="create-user" type="checkbox" checked data-plugin="switchery" data-color="#64b0f2" data-size="small" />
+                            </div>
                         </div>
-                    </div>
                     <div class="mb-3 col-lg-12">
-                            <label class="form-label px-2">Address</label>
-                            <textarea class="form-control" placeholder="Address" id="floatingTextarea2" style="height: 100px" spellcheck="false"></textarea>
+                            <label class="form-label px-2" for="address">Address</label>
+                            <input class="form-control" name="address" />
                     </div>
                         <div class="mb-3 col-lg-12 row">
                             <div class="mb-3 col-lg-4">

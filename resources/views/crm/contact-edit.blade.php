@@ -1,5 +1,6 @@
 @extends('layouts.app', ["page_title"=> "User Page Design"])
 
+
 @section('css')
     <!-- third party css -->
     <link href="{{asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
@@ -30,7 +31,7 @@
                             <li class="breadcrumb-item active">Product Edit</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Add / Edit Ticket</h4>
+                    <h4 class="page-title">Add / Edit Contact</h4>
                 </div>
             </div>
         </div>
@@ -42,41 +43,29 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="invoice-id-number" class="form-label">Invoice ID Number <span class="text-danger">*</span></label>
-                            <input type="text" id="invoice-id-number" class="form-control"  placeholder="Invoice Id Number" value="I00001" readonly>
+                            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control"  placeholder="Name">
                         </div>
 
                         <div class="mb-3">
-                            <label for="order-id-number" class="form-label">Order ID Number <span class="text-danger">*</span></label>
-                            <input type="text" id="order-id-number" class="form-control" value="OR00001" readonly>
+                            <label for="birth-date" class="form-label">Date Of Birth </label>
+                            <input type="text" class="form-control date-picker" placeholder="yyyy-mm-dd">
                         </div>
 
                         <div class="mb-3">
-                            <label for="order-date" class="form-label">Date <span class="text-danger">*</span></label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text fa fa-calendar"></span>
-                                </div>
-                                <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd/mm/yyyy">
-                            </div>
-
+                            <label for="company" class="form-label">Company <span class="text-danger">*</span></label>
+                            <input type="text" id="company" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label for="details" class="form-label">Details</label>
-                            <textarea class="form-control" id="details" rows="6"></textarea>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="order-status" class="form-label">Status <span class="text-danger">*</span></label>
-                            <select class="form-select" name="order_status" id="order-status">
-                                <option data-display="Select">-- Select Order Status --</option>
-                                <option value="1">Pending</option>
-                                <option value="2">Received</option>
-                                <option value="3">Cancel</option>
+                            <label for="user-role" class="form-label">User Role <span class="text-danger">*</span></label>
+                            <select class="form-select" name="user-role" id="report-day">
+                                <option data-display="Select">-- Select User Role --</option>
+                                <option value="1">Admin</option>
+                                <option value="2">Cashier</option>
+                                <option value="4">General User</option>
                             </select>
                         </div>
-
                     </div>
                 </div> <!-- end card -->
             </div> <!-- end col -->
@@ -86,48 +75,31 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="product-category" class="form-label">Branch</label>
-                            <select class="form-control select2" id="product-category">
-                                <option>Select Branch</option>
-                                <optgroup label="Shopping">
-                                    <option value="SH1">Branch 01</option>
-                                    <option value="SH2">Branch 02</option>
-                                    <option value="SH3">Branch 03</option>
-                                    <option value="SH4">Branch 04</option>
-                                </optgroup>
-
-                            </select>
+                            <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                            <input type="phone" id="email" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Date & Time</label>
-                            <input type="text" id="datetime-datepicker" class="form-control" placeholder="Date and Time">
+                            <label for="photo" class="form-label">Photo <span class="text-danger">*</span></label>
+                            <div class="mb-3">
+                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
+                                    <div class="fallback">
+                                        <input name="file" type="file" id="photo" multiple />
+                                    </div>
+
+                                    <div class="dz-message needsclick">
+                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                        <h3>Drop files here or click to upload.</h3>
+                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
+                                                <strong>not</strong> actually uploaded.)</span>
+                                    </div>
+                                </form>
+                                <!-- Preview -->
+                                <div class="dropzone-previews mt-3" id="file-previews"></div>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="date-time" class="form-label">Files </label>
-                            <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
-                                <div class="fallback">
-                                    <input name="file" type="file" multiple />
-                                </div>
-
-                                <div class="dz-message needsclick">
-                                    <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                    <h3>Drop files here or click to upload.</h3>
-                                    <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                <strong>not</strong> actually uploaded.)</span>
-                                </div>
-                            </form>
-                            <!-- Preview -->
-                            <div class="dropzone-previews mt-3" id="file-previews"></div>
-
-                        </div>
-                        <div class="mb-3">
-                            <label for="payment-type" class="form-label">Type Of Payment <span class="text-danger">*</span></label>
-                            <select class="form-select" name="payment_type" id="payment-type">
-                                <option data-display="Select">-- Select Type Of Payment --</option>
-                                <option value="1">Payment Type 01</option>
-                                <option value="2">Payment Type 02</option>
-                                <option value="3">Payment Type 03</option>
-                            </select>
+                            <label for="details" class="form-label">Details</label>
+                            <textarea class="form-control" id="details" rows="6"></textarea>
                         </div>
                     </div>
                 </div> <!-- end card -->
@@ -197,4 +169,13 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
     <!-- end demo js-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
 @endsection

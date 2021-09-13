@@ -57,7 +57,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text fa fa-calendar"></span>
                                 </div>
-                                <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd/mm/yyyy">
+                                <input type="text" class="form-control date-picker" placeholder="yyyy-mm-dd">
                             </div>
 
                         </div>
@@ -197,4 +197,13 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
     <!-- end demo js-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
 @endsection

@@ -28,7 +28,7 @@
                 <div class="card-body">
                     <div class="row mb-2">
                         <div class="col-sm-4">
-                            <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#custom-modal"><i class="mdi mdi-plus-circle me-1"></i> Add Customers</button>
+                            <a href="{{route('second', ['crm', 'customer-edit'])}}" class="btn btn-danger waves-effect waves-light"><i class="mdi mdi-plus-circle me-1"></i> Add Customers</a>
                         </div>
                         <div class="col-sm-8">
                             <div class="text-sm-end mt-2 mt-sm-0">

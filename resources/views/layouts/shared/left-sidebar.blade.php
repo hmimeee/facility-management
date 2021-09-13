@@ -92,62 +92,62 @@
 
                 <li class="menu-title mt-2">Apps</li>
 
-                  <li>
-                    <a href="#sidebarDesign" data-bs-toggle="collapse">
-                        <i data-feather="shopping-cart"></i>
-                        <span> Design </span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                    <div class="collapse" id="sidebarDesign">
-                        <ul class="nav-second-level">
-                            <li>
-                                <a href="{{route('second', ['designs', 'add-edit-report-page'])}}">add-edit-report-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'order-page'])}}">order-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'role-create-page'])}}">role-create-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'role-list-page'])}}">role-list-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'ticket-create'])}}">ticket-create</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'ticket-detail'])}}">ticket-detail</a>
-                            </li>
-                             <li>
-                                <a href="{{route('second', ['designs', 'ticket-list-page'])}}">ticket-list-page</a>
-                            </li>
-                             <li>
-                                <a href="{{route('second', ['designs', 'ticket-table-page'])}}">ticket-table-page</a>
-                            </li>
-                             <li>
-                                <a href="{{route('second', ['designs', 'user-page'])}}">user-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'add-edit-contact-page'])}}">add-edit-contact-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'contract-information-page'])}}">contract-information-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'contact-information-table-page'])}}">contact-information-table-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'branches-page'])}}">branches-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'order-details-page'])}}">order-details-page</a>
-                            </li>
-                            <li>
-                                <a href="{{route('second', ['designs', 'qr-generate-page'])}}">qr-generate-page</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+{{--                  <li>--}}
+{{--                    <a href="#sidebarDesign" data-bs-toggle="collapse">--}}
+{{--                        <i data-feather="shopping-cart"></i>--}}
+{{--                        <span> Design </span>--}}
+{{--                        <span class="menu-arrow"></span>--}}
+{{--                    </a>--}}
+{{--                    <div class="collapse" id="sidebarDesign">--}}
+{{--                        <ul class="nav-second-level">--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'add-edit-report-page'])}}">add-edit-report-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'order-page'])}}">order-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'role-create-page'])}}">role-create-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'role-list-page'])}}">role-list-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'ticket-create'])}}">ticket-create</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'ticket-detail'])}}">ticket-detail</a>--}}
+{{--                            </li>--}}
+{{--                             <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'ticket-list-page'])}}">ticket-list-page</a>--}}
+{{--                            </li>--}}
+{{--                             <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'ticket-table-page'])}}">ticket-table-page</a>--}}
+{{--                            </li>--}}
+{{--                             <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'user-page'])}}">user-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'add-edit-contact-page'])}}">add-edit-contact-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'contract-information-page'])}}">contract-information-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'contact-information-table-page'])}}">contact-information-table-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'branches-page'])}}">branches-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'order-details-page'])}}">order-details-page</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="{{route('second', ['designs', 'qr-generate-page'])}}">qr-generate-page</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
 
                 <li>
                     <a href="#sidebarEcommerce" data-bs-toggle="collapse">
@@ -227,13 +227,13 @@
                                 <a href="{{route('second', ['crm', 'users'])}}">Users</a>
                             </li>
                                <li>
-                                <a href="{{route('second', ['crm', 'customers'])}}">Roles</a>
+                                <a href="{{route('second', ['crm', 'roles'])}}">Roles</a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
-                {{-- <li>
+                <li>
                     <a href="#sidebarEmail" data-bs-toggle="collapse">
                         <i data-feather="mail"></i>
                         <span> Email </span>
@@ -255,7 +255,7 @@
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
 
                 {{-- <li>
                     <a href="{{route('second', ['apps', 'social-feed'])}}">
@@ -265,20 +265,85 @@
                     </a>
                 </li> --}}
 
+
+
+
+
+
+{{--                <li>--}}
+{{--                    <a href="{{route('second', ['apps', 'companies'])}}">--}}
+{{--                        <i data-feather="activity"></i>--}}
+{{--                        <span> Companies </span>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+
                 <li>
-                    <a href="{{route('second', ['apps', 'companies'])}}">
+                    <a href="#sidebarProjects" data-bs-toggle="collapse">
                         <i data-feather="activity"></i>
                         <span> Companies </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarProjects">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{route('second', ['apps', 'companies'])}}">Clients</a>
+                            </li>
+                            <li>
+                                <a href="{{route('second', ['apps', 'contracts'])}}">Contracts</a>
+                            </li>
+                            <li>
+                                <a href="{{route('second', ['apps', 'branches'])}}">Branches</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="#sidebarProject" data-bs-toggle="collapse">
+                        <i data-feather="briefcase"></i>
+                        <span> Projects </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarProject">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="#">List</a>
+                            </li>
+                            <li>
+                                <a href="#">Preventive</a>
+                            </li>
+                            <li>
+                                <a href="#">Corrective</a>
+                            </li>
+                            <li>
+                                <a href="#">Kanban Board</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i data-feather="clipboard"></i>
+                        <span> Tasks </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#sidebarProjects" data-bs-toggle="collapse">
+                    <a href="#sidebarOrders" data-bs-toggle="collapse">
                         <i data-feather="briefcase"></i>
                         <span> Orders </span>
                         <span class="menu-arrow"></span>
                     </a>
-                    <div class="collapse" id="sidebarProjects">
+                    <div class="collapse" id="sidebarOrders">
                         <ul class="nav-second-level">
                             <li>
                                 <a href="{{route('second', ['orders', 'list'])}}">List</a>
@@ -344,7 +409,7 @@
                     <div class="collapse" id="sidebarTickets">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="{{route('second', ['tickets', 'list'])}}">List</a>
+                                <a href="{{route('second', ['tickets', 'ticket-list'])}}">List</a>
                             </li>
                             <li>
                                 <a href="{{route('second', ['tickets', 'detail'])}}">Detail</a>
