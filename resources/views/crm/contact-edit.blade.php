@@ -46,11 +46,16 @@
                             <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
                             <input type="text" id="name" class="form-control"  placeholder="Name">
                         </div>
-
                         <div class="mb-3">
-                            <label for="birth-date" class="form-label">Date Of Birth </label>
-                            <input type="text" class="form-control date-picker" placeholder="yyyy-mm-dd">
+                            <label for="install-date" class="form-label">Date Of Birth</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text fa fa-calendar"></span>
+                                </div>
+                                <input type="text" id="install-date" name="date_birth" class="form-control date-picker" autocomplete="off" placeholder="yyyy-mm-dd">
+                            </div>
                         </div>
+
 
                         <div class="mb-3">
                             <label for="company" class="form-label">Company <span class="text-danger">*</span></label>

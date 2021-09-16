@@ -119,7 +119,7 @@
                         <div class="mb-3">
                             <label for="branch-id" class="form-label">Priority</label>
                             <select class="form-select" name="branch_id" id="branch-id">
-                                <option data-display="Select">-- Select Priority --</option>
+                                <option data-display="Select">-- Select Priority Level --</option>
                                 <option value="no priority">No Priority</option>
                                 <option value="urgent">Urgent</option>
                                 <option value="high">High</option>

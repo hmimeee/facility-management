@@ -88,6 +88,7 @@
                         </div>
                     </div>
                     <div class="mb-3 col-lg-6">
+                        <labe>Avatar</labe>
                         <div class="mt-3 relative">
                             <input type="file" data-plugins="dropify" data-default-file="../assets/images/small/img-2.jpg')}}" />
                         </div>
@@ -98,32 +99,32 @@
                                 <input class="ms-2" id="create-user" type="checkbox" checked data-plugin="switchery" data-color="#64b0f2" data-size="small" />
                             </div>
                         </div>
-                    <div class="mb-3 col-lg-12">
-                            <label class="form-label px-2" for="address">Address</label>
-                            <input class="form-control" name="address" />
+                    <div class="mb-3 col-lg-6">
+                        <label class="form-label px-2" for="address">Address</label>
+                        <textarea class="form-control" name="address" rows="6"></textarea>
                     </div>
-                        <div class="mb-3 col-lg-12 row">
-                            <div class="mb-3 col-lg-4">
-                                <label for="example-select" class="form-label">Select City</label>
-                                <select class="form-select" id="example-select">
-                                <option>city one</option>
-                                <option>city two</option>
-                                <option>city three</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-lg-4">
-                                <label for="example-select" class="form-label">Select State</label>
-                                <select class="form-select" id="example-select">
-                                <option>State one</option>
-                                <option>State two</option>
-                                <option>State three</option>
-                                </select>
-                            </div>
-                             <div class="mb-3 col-lg-4">
-                                <label for="example-select" class="form-label">Zip</label>
-                                 <input type="text" id="product-reference" class="form-control" placeholder="Zip">
-                            </div>
-                        </div>
+                    <div class="mb-3 col-lg-6">
+                        <label for="example-select" class="form-label">City</label>
+                        <select class="form-select" id="example-select">
+                            <option>-- Select City --</option>
+                            <option>City One</option>
+                            <option>City Two</option>
+                            <option>City three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <label for="example-select" class="form-label">State</label>
+                        <select class="form-select" id="example-select">
+                            <option>-- Select State --</option>
+                            <option>State one</option>
+                            <option>State two</option>
+                            <option>State three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <label for="example-select" class="form-label">Zip</label>
+                        <input type="text" id="product-reference" class="form-control" placeholder="Zip">
+                    </div>
                     </div>
                 </div>
           </div>

@@ -568,7 +568,7 @@
                     </div>
                 </li> --}}
 
-                {{--    <li class="menu-title mt-2">Components</li>
+                <li class="menu-title mt-2">Components</li>
 
                    <li>
                        <a href="#sidebarBaseui" data-bs-toggle="collapse">
