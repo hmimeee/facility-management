@@ -61,49 +61,83 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="product-category" class="form-label">Categories <span class="text-danger">*</span></label>
-                            <select class="form-control select2" id="product-category">
-                                <option>Select</option>
-                                <optgroup label="Shopping">
-                                    <option value="SH1">Shopping 1</option>
-                                    <option value="SH2">Shopping 2</option>
-                                    <option value="SH3">Shopping 3</option>
-                                    <option value="SH4">Shopping 4</option>
-                                </optgroup>
-                                <optgroup label="CRM">
-                                    <option value="CRM1">Crm 1</option>
-                                    <option value="CRM2">Crm 2</option>
-                                    <option value="CRM3">Crm 3</option>
-                                    <option value="CRM4">Crm 4</option>
-                                </optgroup>
-                                <optgroup label="eCommerce">
-                                    <option value="E1">eCommerce 1</option>
-                                    <option value="E2">eCommerce 2</option>
-                                    <option value="E3">eCommerce 3</option>
-                                    <option value="E4">eCommerce 4</option>
-                                </optgroup>
-
+                            <label for="categories" class="form-label">Categories <span class="text-danger">*</span></label>
+                            <select class="form-select" name="categories" id="client">
+                                <option data-display="Select">-- Select Categories --</option>
+                                <option value="1">Categories 01</option>
+                                <option value="2">Categories 02</option>
+                                <option value="4">Categories 03</option>
                             </select>
                         </div>
+
                         <div class="mb-3">
                             <label for="details" class="form-label">Details</label>
                             <textarea class="form-control" id="details" rows="6"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Type <span class="text-danger">*</span></label>
+                            <label for="type" class="form-label">Type Of Service <span class="text-danger">*</span></label>
 
                             <div class="d-flex justify-content-between col-md-4">
                                 <div class="form-check mb-2 form-check-primary">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="customradio2">
-                                    <label class="form-check-label" for="customradio2">Preventive</label>
+                                    <input class="form-check-input" type="radio" value="corrective" name="service_type" id="corrective">
+                                    <label class="form-check-label" for="corrective">Corrective</label>
                                 </div>
 
-                                <div class="form-check mb-2 form-check-primary">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="customradio3" checked>
-                                    <label class="form-check-label" for="customradio3">Corrective</label>
+                                <div class="form-check mb-2 form-check-primary ms-2">
+                                    <input class="form-check-input" value="preventive" type="radio" name="service_type" id="preventive" checked>
+                                    <label class="form-check-label" for="preventive">Preventive</label>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="mb-3 priority">
+                            <label for="priority" class="form-label">Priority Level <span class="text-danger">*</span></label>
+                            <select class="form-select" name="priority_level " id="priority ">
+                                <option data-display="Select">-- Enter Priority Level --</option>
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                                <option value="Critical">Critical</option>
+                                <option value="No Priority">No Priority</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Type <span class="text-danger">*</span></label>
+
+                            <div class="d-flex justify-content-between col-md-4">
+                                <div class="form-check mb-2 form-check-primary">
+                                    <input class="form-check-input" type="radio" value="programed" name="type" id="programed">
+                                    <label class="form-check-label" for="programed">Programed</label>
+                                </div>
+
+                                <div class="form-check mb-2 form-check-primary ms-2">
+                                    <input class="form-check-input" value="automatic" type="radio" name="type" id="automatic" checked>
+                                    <label class="form-check-label" for="automatic">Automatic</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 how-often">
+                            <label class="form-label">How Often <span class="text-danger">*</span></label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" name="how_often">
+                                        <option data-display="Select">-- Select Type --</option>
+                                        <option value="1">Type 01</option>
+                                        <option value="2">Type 02</option>
+                                        <option value="3">Type 03</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 typ-date-time">
+                            <label class="form-label">When<span class="text-danger">*</span></label>
+                            <input type="text" id="datetime-datepicker" class="form-control" placeholder="yyyy-mm-dd hh:mm:ss">
+                        </div>
+
 
                     </div>
                 </div> <!-- end card -->
@@ -132,50 +166,44 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="product-category" class="form-label">Branch</label>
-                            <select class="form-control select2" id="product-category">
-                                <option>Select Branch</option>
-                                <optgroup label="Shopping">
-                                    <option value="SH1">Branch 01</option>
-                                    <option value="SH2">Branch 02</option>
-                                    <option value="SH3">Branch 03</option>
-                                    <option value="SH4">Branch 04</option>
-                                </optgroup>
-
+                            <label for="branch " class="form-label">Branch <span class="text-danger">*</span></label>
+                            <select class="form-select" name="branch " id="contract ">
+                                <option data-display="Select">-- Select Branch --</option>
+                                <option value="1">Branch 01</option>
+                                <option value="2">Branch 02</option>
+                                <option value="4">Branch 03</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Date & Time</label>
-                            <input type="text" id="datetime-datepicker" class="form-control" placeholder="Date and Time">
+                            <input type="text" id="datetime-datepicker" class="form-control" placeholder="yyyy-mm-dd hh:mm:ss">
                         </div>
                         <div class="mb-3">
                             <label for="assign-to" class="form-label">Assign To <span class="text-danger">*</span></label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
-                                </div>
-                                <input type="text" id="assign-to" name="install_date" class="form-control" autocomplete="off" placeholder="Username">
-                            </div>
+                            <select class="form-select" name="client" id="client">
+                                <option data-display="Select">-- Select User --</option>
+                                <option value="1">Operator 01</option>
+                                <option value="2">Operator 02</option>
+                                <option value="4">Operator 03</option>
+                            </select>
 
                         </div>
                         <div class="mb-3">
-                            <div class="mb-3">
-                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
-                                    <div class="fallback">
-                                        <input name="file" type="file" multiple />
-                                    </div>
+                            <label class="form-label">Files</label>
+                            <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple />
+                                </div>
 
-                                    <div class="dz-message needsclick">
-                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                        <h3>Drop files here or click to upload.</h3>
-                                        <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
+                                <div class="dz-message needsclick">
+                                    <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                    <h3>Drop files here or click to upload.</h3>
+                                    <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
                                 <strong>not</strong> actually uploaded.)</span>
-                                    </div>
-                                </form>
-                                <!-- Preview -->
-                                <div class="dropzone-previews mt-3" id="file-previews"></div>
-                            </div>
-
+                                </div>
+                            </form>
+                            <!-- Preview -->
+                            <div class="dropzone-previews mt-3" id="file-previews"></div>
                         </div>
                     </div>
                 </div> <!-- end card -->
@@ -245,4 +273,40 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-pickers.init.js')}}"></script>
     <!-- end demo js-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /**********************************
+             SERVICE TYPE SCRIPTING START HERE
+             **********************************/
+            $('.priority').hide();
+            $("input[name$='service_type']").click(function() {
+                let serviceType = $(this).val();
+                if(serviceType === "corrective")
+                    $('.priority').show();
+                else $('.priority').hide();
+            });
+            /********************************
+             TYPE SCRIPTING START HERE
+             ********************************/
+            $('.how-often').show();
+            $('.typ-date-time').hide();
+            $("input[name$='type']").click(function() {
+                let typeValue = $(this).val();
+                if(typeValue === "programed"){
+                    $('.how-often').hide();
+                    $('.typ-date-time').show();
+                } else{
+                    $('.how-often').show();
+                    $('.typ-date-time').hide();
+                }
+            });
+
+            $('#datetime-datepicker').datetimepicker({
+                format: "yyyy-mm-dd hh:mm:ss A",
+                useSeconds: true
+            });
+        });
+
+    </script>
 @endsection

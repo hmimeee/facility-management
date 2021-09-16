@@ -35,10 +35,17 @@
             <div class="card-body">
               <div class="row">
                   <div class="col-md-6">
+
                       <div class="mb-3">
-                          <label for="role-name" class="form-label">Role Name <span class="text-danger">*</span></label>
-                          <input type="text" id="role-name" class="form-control"  placeholder="Role Name">
+                          <label id="role-name" class="form-label">Role Name <span class="text-danger">*</span></label>
+                          <select class="form-select" name="priority_level " id="role-name">
+                              <option data-display="Select">-- Select Role --</option>
+                              <option value="Admin">Admin</option>
+                              <option value="User">User</option>
+                              <option value="Client">Client</option>
+                          </select>
                       </div>
+
                       <div class="mb-3">
                           <div class="d-flex justify-content-between mb-3">
                               <h4 class="page-title">User Types</h4>

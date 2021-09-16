@@ -6,6 +6,8 @@
     <link href="{{asset('assets/libs/dropzone/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/quill/quill.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.css')}}" rel="stylesheet" type="text/css" />
+
+    <link href="{{asset('assets/libs/selectize/selectize.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
 @endsection
 
@@ -59,7 +61,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="address" class="form-label">Address </label>
-                            <textarea type="text" id="address" name="address" rows="2" class="form-control"></textarea>
+                            <textarea type="text" id="address" name="address" rows="6" class="form-control"></textarea>
                         </div>
                     </div>
                 </div> <!-- end card -->
@@ -71,23 +73,25 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="client" class="form-label">Client <span class="text-danger">*</span></label>
-                            <select class="form-select" name="client" id="client">
+                            <select class="form-select" name="priority" id="priority">
                                 <option data-display="Select">-- Select Client --</option>
                                 <option value="1">Client 01</option>
-                                <option value="2">Client 02</option>
-                                <option value="4">Client 03</option>
+                                <option value="1">Client 02</option>
+                                <option value="1">Client 03</option>
+                                <option value="1">Client 04</option>
                             </select>
                         </div>
 
                         <div class="mb-3">
-                            <label for="contact" class="form-label">Contact <span class="text-danger">*</span></label>
-                            <select class="form-control select2" id="contact">
-                                <option>Select Contact</option>
-                                <option value="1">Contact 01</option>
-                                <option value="2">Contact 02</option>
-                                <option value="3">Contact 03</option>
-                                <option value="4">Contact 04</option>
-
+                            <label for="contract" class="form-label">Contract <span class="text-danger">*</span></label>
+                            <select class="form-control" data-width="100%">
+                                <option>Select</option>
+                                <optgroup label="Pacific Time Zone">
+                                    <option value="CA">California</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="WA">Washington</option>
+                                </optgroup>
                             </select>
                         </div>
                         <div class="mb-3">
@@ -163,12 +167,10 @@
     <script src="{{asset('assets/js/pages/add-product.init.js')}}"></script>
     <!-- end demo js--->
 
-
     <!-- demo app -->
     <script src="{{asset('assets/libs/mohithg-switchery/mohithg-switchery.min.js')}}"></script>
     <script src="{{asset('assets/libs/selectize/selectize.min.js')}}"></script>
     <script src="{{asset('assets/libs/select2/select2.min.js')}}"></script>
-
 
     <script src="{{asset('assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
     <!-- third party js ends -->
@@ -176,5 +178,33 @@
     <!-- demo app -->
     <script src="{{asset('assets/js/pages/form-advanced.init.js')}}"></script>
     <!-- end demo js-->
+
+{{--    <script type="text/javascript">--}}
+{{--        $(document).ready(function() {--}}
+{{--            /********************************--}}
+{{--             SELECT ALL SCRIPTING START HERE--}}
+{{--             ********************************/--}}
+{{--            $('#select-all').change(function () {--}}
+{{--                if ($(this).prop('checked')) {--}}
+{{--                    $('#view-user,#add-user, #delete-user').prop('checked', true);--}}
+{{--                } else {--}}
+{{--                    $('#view-user,#add-user, #delete-user').prop('checked', false);--}}
+{{--                }--}}
+{{--            });--}}
+
+{{--            /***************************--}}
+{{--             LOGOUT SCRIPTING START HERE--}}
+{{--             ***************************/--}}
+{{--            $('.set-logout-time').hide();--}}
+{{--            $('#log-out').change(function () {--}}
+{{--                if ($(this).prop('checked')) $('.set-logout-time').show();--}}
+{{--                else $('.set-logout-time').hide();--}}
+{{--            });--}}
+
+{{--            $('#select-all').trigger('change');--}}
+{{--            $('#logout').trigger('change');--}}
+{{--        });--}}
+
+{{--    </script>--}}
 
 @endsection

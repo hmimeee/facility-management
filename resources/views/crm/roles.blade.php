@@ -28,7 +28,7 @@
                                 <h4 class="header-title">All roles</h4>
                             </div>
                             <div class="col-auto">
-                                <a href="{{route('second', ['crm', 'role-create'])}}" class="btn btn-primary"><i class="mdi mdi-plus-circle"></i> Add</a>
+                                <a href="{{route('second', ['crm', 'role-create'])}}" class="btn btn-primary"><i class="mdi mdi-plus-circle"></i> Add Role</a>
                             </div>
                         </div>
                         <div class="row justify-content-between mb-2">

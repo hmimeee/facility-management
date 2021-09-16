@@ -97,6 +97,16 @@
                         </div>
 
                         <div class="mb-3">
+                            <label for="city" class="form-label">State </label>
+                            <select class="form-select" name="city" id="state">
+                                <option data-display="Select">-- Select State --</option>
+                                <option value="1">State 01</option>
+                                <option value="2">State 02</option>
+                                <option value="4">State 03</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
                             <label for="city" class="form-label">City </label>
                             <select class="form-select" name="city" id="city">
                                 <option data-display="Select">-- Select City --</option>
@@ -146,16 +156,31 @@
                         </div>
                         <div class="mb-3">
                             <label for="role" class="form-label">Role <span class="text-danger">*</span></label>
-                            <input type="text" id="role" class="form-control" placeholder="Role">
+                            <select class="form-select" name="role_id" id="role">
+                                <option data-display="Select">-- Select Role --</option>
+                                <option value="1">Role 01</option>
+                                <option value="2">Role 02</option>
+                                <option value="4">Role 03</option>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Boss </label>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Role">
+                                    <select class="form-select" name="contract_id" id="role">
+                                        <option data-display="Select">-- Select Role --</option>
+                                        <option value="1">Role 01</option>
+                                        <option value="2">Role 02</option>
+                                        <option value="4">Role 03</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="User">
+                                    <select class="form-select" name="contract_id" id="role">
+                                        <option data-display="Select">-- Select User --</option>
+                                        <option value="1">User 01</option>
+                                        <option value="2">User 02</option>
+                                        <option value="4">User 03</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -163,15 +188,30 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <label for="client" class="form-label">Client </label>
-                                    <input id="client" type="text" class="form-control" placeholder="">
+                                    <select class="form-select" name="client_id" id="role">
+                                        <option data-display="Select">-- Select Client --</option>
+                                        <option value="1">Client 01</option>
+                                        <option value="2">Client 02</option>
+                                        <option value="4">Client 03</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="contract" class="form-label">Contract </label>
-                                    <input id="contract" type="text" class="form-control" placeholder="">
+                                    <select class="form-select" name="contract_id" id="role">
+                                        <option data-display="Select">-- Select Contract --</option>
+                                        <option value="1">Contract 01</option>
+                                        <option value="2">Contract 02</option>
+                                        <option value="4">Contract 03</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="branch" class="form-label">Branch </label>
-                                    <input id="branch" type="text" class="form-control" placeholder="">
+                                    <select class="form-select" name="branch_id" id="role">
+                                        <option data-display="Select">-- Select Branch --</option>
+                                        <option value="1">Branch 01</option>
+                                        <option value="2">Branch 02</option>
+                                        <option value="4">Branch 03</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
