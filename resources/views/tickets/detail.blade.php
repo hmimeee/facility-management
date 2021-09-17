@@ -26,7 +26,6 @@
                 <!-- project card -->
                 <div class="card d-block">
                     <div class="card-body">
-
                         <div class="float-sm-end mb-2 mb-sm-0">
                             <div class="row g-2">
                                 <div class="col-auto">

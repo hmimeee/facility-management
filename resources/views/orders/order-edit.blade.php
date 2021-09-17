@@ -175,10 +175,6 @@
                         <div class="mb-3">
                             <label class="form-label">Date & Time</label>
                             <input type="text" id="datetime-datepicker" class="form-control" placeholder="yyyy-mm-dd hh:mm:ss">
-                            <div class="mb-3 typ-date-time">
-                                <label class="form-label">When<span class="text-danger">*</span></label>
-                                <input type="text" id="datetime-datepicker" class="form-control" placeholder="yyyy-mm-dd hh:mm:ss">
-                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="assign-to" class="form-label">Assign To <span class="text-danger">*</span></label>

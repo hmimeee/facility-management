@@ -103,7 +103,7 @@
                                         <h5><span class="badge bg-info">Shipped</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -136,7 +136,7 @@
                                         <h5><span class="badge bg-warning">Processing</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -166,7 +166,7 @@
                                         <h5><span class="badge bg-warning">Processing</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -197,7 +197,7 @@
                                         <h5><span class="badge bg-success">Delivered</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -228,7 +228,7 @@
                                         <h5><span class="badge bg-danger">Cancelled</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -258,7 +258,7 @@
                                         <h5><span class="badge bg-info">Shipped</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -290,7 +290,7 @@
                                         <h5><span class="badge bg-warning">Processing</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -323,7 +323,7 @@
                                         <h5><span class="badge bg-info">Shipped</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -354,7 +354,7 @@
                                         <h5><span class="badge bg-success">Delivered</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>
@@ -385,7 +385,7 @@
                                         <h5><span class="badge bg-info">Shipped</span></h5>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                        <a href="{{route('second', ['orders', 'detail'])}}" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                         <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                     </td>

@@ -49,13 +49,13 @@
                         </div>
                         <div class="mb-3">
                             <div class="row">
-                                <label for="client-type" class="form-label">Client Type<span class="text-danger"> *</span></label>
+                                <label for="client-type" class="form-label">Service Type<span class="text-danger"> *</span></label>
                                 <div class="col-md-6">
                                     <select class="form-select" name="client_type" id="client-type">
-                                        <option data-display="Select">-- Select Client Type --</option>
-                                        <option value="1">Client Type O1</option>
-                                        <option value="2">Client Type O2</option>
-                                        <option value="4">Client Type O3</option>
+                                        <option data-display="Select">-- Select Service Type --</option>
+                                        <option value="1">Service Type O1</option>
+                                        <option value="2">Service Type O2</option>
+                                        <option value="4">Service Type O3</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6">
